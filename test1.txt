@@ -1,23 +1,24 @@
 Самарин Даниил
 
-#include <string>
+
 #include <iostream>
-#include <stack>
-
-using namespace ::std;
-
-int main()
+#include <stdlib.h>
+void main()
 {
-	string str("2  2345 612");
-	int l = 10;
-
-	for (int i = 0; i < l; i++)
+	system("Chcp 1251");
+	int x, y;
+	printf("Введите значение x: ");
+	scanf("%d", &x);
+	if (x < -10) 
 	{
-		if (str[i] == ' ' && str[i + 1] == ' ')
-		{
-			str.erase(i, 1);
-		}
+		y = 4 * x - 2;
 	}
-	cout << str;
+	else if (x < -2) {
+		y = 10 * x + 5;
+	}
+	else {
+		y = x + 4;
+	}
+	printf("y равен %d\n", y);
 	system("pause");
 }
